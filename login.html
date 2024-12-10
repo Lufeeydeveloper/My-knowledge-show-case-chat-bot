@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felowas - AI-Powered Study Assistance</title>
+    <link rel="stylesheet" href="me.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.form-section, #quiz-section, #feedback-section {
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45009d;
+}
+
+.hidden {
+    display: none;
+}
+
+#answers button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    </style>
+    
+</head>
+<body>
+    <header>
+        
+        <h1>WELCOME TO</h1>
+        <p>Personalized Study Assistance for 3MTT Fellows</p>
+    </header>
+
+    <main>
+        
+        <!-- Login Form -->
+        <section id="login-section" class="form-section">
+            <h2>Login for quiz</h2>
+            <form id="login-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="fellow-id">Fellow ID:</label>
+                <input type="text" id="fellow-id" required>
+                <label for="learning track">Learning Track:</label>
+                <input type="text" id="name" required>
+                
+                <button type="submit">Login</button>
+                
+            </form>
+        </section>
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="hidden">
+            <h2>Quiz Time</h2>
+            <div id="quiz-container">
+                <p id="question">Question will appear here</p>
+                <div id="answers">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback-section" class="hidden">
+            <h2>Quiz Completed!</h2>
+            <p id="feedback"></p>
+            <button id="restart-btn">Restart</button>
+        </section>
+        <section id="login-section" class="form-section">
+        
+        <a href="felowas.html" style="color:black;text-decoration:none;">FELOWAS</a></a></button>
+</section>
+        <!-- Chatbot Section -->
+<section id="chatbot-section" class="form-section hidden">
+    <h2>Ask Felowas</h2>
+    <div id="chat-window">
+        <div id="chat-messages"></div>
+    </div>
+    <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type your question here..." required>
+        <button type="submit">Send</button>
+    </form>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
